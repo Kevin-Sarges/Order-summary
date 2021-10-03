@@ -16,30 +16,17 @@ body {
   font-weight: 500;
 }
 
-@media (max-width: 375px) {
-  body {
-    font-size: 30px;
-    text-align: center;
-  }
-}
-
-h1, h2, h3, h4 {
+body h1, body h2, body h3, body h4 {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 900;
   color: #1f2f56;
 }
 
-p {
+body p {
   color: #7280a7;
 }
 
-@media (max-width: 375px) {
-  p {
-    font-size: 24px;
-  }
-}
-
-a {
+body a {
   text-decoration: none;
   font-size: 14px;
 }
@@ -90,8 +77,8 @@ body .container img {
 }
 
 body .container .text {
-  text-align: center;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 body .container .text h2 {
@@ -139,9 +126,16 @@ body .container .value a:hover {
   opacity: .6;
 }
 
+@media (max-width: 375px) {
+  body .container .value {
+    width: 90%;
+  }
+}
+
 body .container button {
+  width: 75%;
   margin-bottom: 1.5rem;
-  padding: 1rem 7rem;
+  padding: 1rem;
   background: #3829e0;
   border: none;
   border-radius: 10px;
@@ -167,14 +161,96 @@ body .container .btn-cancel:hover {
   color: #1f2f56;
 }
 
-.attribution {
+@media (max-width: 1100px) {
+  body .container .value img {
+    margin-left: 0;
+  }
+  body .container .value .text-value {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 875px) {
+  body .container {
+    width: 40%;
+  }
+  body .container .value img {
+    margin-left: 0;
+  }
+  body .container .value .text-value {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 770px) {
+  body .container {
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  body .container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  body .container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  body .container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  body .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  body .container {
+    width: 85%;
+  }
+  body .container .text p {
+    width: 85%;
+  }
+  body .container .value img {
+    margin-left: 0;
+  }
+  body .container .value .text-value {
+    margin-left: 0;
+  }
+  body .container button {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  body .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 280px) {
+  body .container {
+    width: 95%;
+  }
+}
+
+body .attribution {
   font-size: 11px;
   text-align: center;
   position: fixed;
   bottom: 0;
 }
 
-.attribution a {
+body .attribution a {
   color: #3e52a3;
 }
 /*# sourceMappingURL=styles.css.map */
